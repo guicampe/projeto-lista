@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monte sua lista</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Lista de tarefas</h1>
+
+        <input type="text" name="tarefas" id="textoTarefa" placeholder="Digite sua tarefa">
+        <input type="button" value="Adicionar" onclick="adiciona()" id="botaoAdicionar">
+        <ul id="lista"></ul>
+        <input type="button" value="Limpar lista" id="botaoLimpar" onclick="limpa()">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

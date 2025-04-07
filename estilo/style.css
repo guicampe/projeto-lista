@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, orange, yellow);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+div.container {
+    width: 450px;
+    min-height: fit-content;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    margin-top: 50px;
+}
+
+div > h1 {
+    text-align: center;
+    padding: 8px;
+}
+
+#textoTarefa {
+    padding: 6px;
+    margin: 5px 5px 5px 20px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+#botaoAdicionar, #botaoLimpar {
+    padding: 4px;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    text-align: center;
+    list-style: none;
+    margin: 8px;
+}
