@@ -37,4 +37,5 @@ document.querySelector('#textoTarefa').addEventListener('keydown', function(even
 
 function limpa() {
     tarefa.innerHTML = "";
+    botao2.style.display = "none";
 }

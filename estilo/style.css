@@ -15,13 +15,14 @@ body {
 
 
 div.container {
-    width: 450px;
+    max-width: 400px;
     min-height: fit-content;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
     margin: auto;
     margin-top: 50px;
+    padding-bottom: 15px;
 }
 
 div > h1 {
@@ -31,7 +32,7 @@ div > h1 {
 
 #textoTarefa {
     padding: 6px;
-    margin: 5px 5px 5px 20px;
+    margin: 5px 5px 5px 60px;
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
     border: none;
 }
@@ -43,8 +44,27 @@ div > h1 {
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
+#botaoLimpar {
+    margin: auto;
+}
+
 ul {
     text-align: center;
     list-style: none;
     margin: 8px;
+    line-height: 1.4em;
+}
+
+li {
+    border-radius: 20px;
+    
+}
+
+li:hover {
+    transition: background ease-in-out 0.3s;
+    background-color: #c2c2c2;
+}
+
+.checkbox {
+    background-color: red;
 }
