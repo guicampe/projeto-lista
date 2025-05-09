@@ -9,12 +9,14 @@
 <body>
 
     <div class="container">
-
         <h1>Lista de tarefas</h1>
-
-        <input type="text" name="tarefas" id="textoTarefa" placeholder="Digite sua tarefa">
-        <input type="button" value="Adicionar" onclick="adiciona()" id="botaoAdicionar">
-        <ul id="lista"></ul>
+            <div class="cabecalho">
+            <input type="text" name="tarefas" id="textoTarefa" placeholder="Digite sua tarefa" autocomplete="off">
+            <input type="button" value="Adicionar" onclick="adiciona()" id="botaoAdicionar">
+        </div>
+        <div class="lista">
+            <ul id="lista"></ul>
+        </div>
         <input type="button" value="Limpar lista" id="botaoLimpar" onclick="limpa()">
 
     </div>

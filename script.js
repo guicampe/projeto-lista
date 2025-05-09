@@ -17,10 +17,22 @@ function adiciona() {
     item.push(texto);
 
     const itemLista = document.createElement('li');
+
+    const label = document.createElement('label');
+    label.style.display = 'flex';
+    label.style.alignItems = 'center';
+    label.style.flexWrap = 'nowrap';
+    label.style.gap = '5px'
+
     const checkbox = document.createElement('input');
     checkbox.type = "checkbox";
-    itemLista.appendChild(checkbox);
-    itemLista.appendChild(document.createTextNode(" " + texto));
+    checkbox.style.verticalAlign = 'middle';
+
+    const textoNode = document.createTextNode(texto);
+
+    label.appendChild(checkbox);
+    label.appendChild(textoNode)
+    itemLista.appendChild(label);
     tarefa.appendChild(itemLista);
 
     document.querySelector('#textoTarefa').value = "";
