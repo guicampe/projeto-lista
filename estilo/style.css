@@ -48,7 +48,7 @@ div > h1 {
 #textoTarefa {
     padding: 6px;
     margin-right: 5px;
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
     border: none;
 }
 
@@ -56,13 +56,23 @@ div > h1 {
     padding: 7px;
     border: none;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
     font-weight: bold;
+    cursor: pointer;
 }
 
 #botaoAdicionar {
     background-color: rgb(70, 156, 255);
-    transition: background ease-in-out 0.3s;
+    transition: background-color ease-in-out 0.3s;
+}
+
+.material-symbols-outlined {
+    background-color: white;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
 
 #botaoAdicionar:hover {
@@ -71,12 +81,12 @@ div > h1 {
 
 #botaoLimpar {
     margin: auto;
-    background-color: rgb(252, 52, 52);
-    transition: background ease-in-out .3s;
+    background-color: rgb(255, 69, 69);
+    transition: background-color ease-in-out .3s;
 }
 
 #botaoLimpar:hover {
-    background-color: rgb(243, 100, 100);
+    background-color: rgb(252, 121, 121);
 }
 
 ul {
@@ -86,14 +96,44 @@ ul {
 }
 
 li {
-    border-radius: 10px;
-    padding: 2px 20px;
     box-sizing: border-box;
     width: 100%;
+    margin: 2px;
     word-break: break-word;
+    display: flex;
+    justify-content: space-between;
 }
 
-li:hover {
-    transition: background ease-in-out 0.3s;
+.label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    gap: 5px;
+    width: 220px;
+    border-radius: 10px;
+    padding: 2px 20px;
+}
+
+.label.checked, .botaoRemover.checked {
+    background-color: #0075FF;
+}
+
+.label.checked:hover, .label.checked:hover button {
+    background-color: #005CC8;
+}
+
+.botaoRemover {
+    border: none;
+    cursor: pointer;
+}
+
+.label:hover, .label:hover button {
     background-color: #c2c2c2;
+    transition: background-color ease-in-out 0.3s;
+}
+
+.checkbox {
+    height: 20px;   
+    width: 20px;
 }
