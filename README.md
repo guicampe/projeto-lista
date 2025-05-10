@@ -1,4 +1,4 @@
 # projeto-lista
- Projeto de um todolist para aplicar conhecimentos em javascript
+Simple to-do list project.
 
 You can access it here: https://guicampe.github.io/projeto-lista/
